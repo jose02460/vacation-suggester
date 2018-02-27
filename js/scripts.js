@@ -7,7 +7,7 @@ $(document).ready(function() {
       var question4 = $("#question4").val();
       var question5 = $("#question5").val();
 
-       if(question1 === "1" || question2 === "1" || question3 === "0" || question4 === "0" || question5 === "0") {
+       if(question1 === "1" || question2 === "1" || question3 === "1" || question4 === "1" || question5 === "1") {
          $("#track").show();
          $("#ruby").show();
          $("#java").hide();
