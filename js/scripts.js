@@ -9,22 +9,22 @@ $(document).ready(function() {
 
        if(question1 === "1" || question2 === "1" || question3 === "1" || question4 === "1" || question5 === "1") {
          $("#track").show();
-         $("#ruby").show();
-         $("#java").hide();
-         $("#cc").hide();
+         $("#any").show();
+         $("#mexico").hide();
+         $("#greenland").hide();
        }
 
-      else if(question1 === "1" || question2 === "1" || question3 === "1" || question4 === "1" || question5 === "1") {
+      else if(question1 === "1" || question2 === "0" || question3 === "1" || question4 === "1" || question5 === "1") {
         $("#track").show();
-        $("#ruby").hide();
-        $("#java").show();
-        $("#cc").hide();
+        $("#any").hide();
+        $("#mexico").show();
+        $("#greenland").hide();
       }
-      else if(question1 === "1" || question2 === "1" || question3 === "1" || question4 === "1" || question5 === "0") {
+      else if(question1 === "0" || question2 === "1" || question3 === "0" || question4 === "0" || question5 === "0") {
         $("#track").show();
-        $("#ruby").hide();
-        $("#java").hide();
-        $("#cc").show();
+        $("#any").hide();
+        $("#mexico").hide();
+        $("#greenland").show();
       }
       else {
         alert("We did not find any matches for you!")
