@@ -6,3 +6,91 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+<title>Track Suggester</title>
+</head>
+<body>
+<div class="container">
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h1 class="panel-title">Please enter information about yourself! Let's see what track is best for you!</h1>
+    </div>
+    <div class="panel-body">
+      <form id="track-Form" data-toggle="validator" role="form">
+        <div class="form-group">
+          <label for="food">Do you like creating database applications?</label>
+          <select class="form-control" id="question1" required>
+            <option value="">select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+        <div class="help-block with-errors"></div>
+        <div class="form-group">
+          <label for="food">Do you like building internal software?</label>
+          <select class="form-control" id="question2" required>
+            <option value="">select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+        <div class="help-block with-errors"></div>
+        <div class="form-group">
+            <label for="food">Do you like back end developement?</label>
+            <select class="form-control" id="question3" required>
+              <option value="">select</option>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
+            </select>
+        <div class="help-block with-errors"></div>
+        <div class="form-group">
+          <label for="food">do you like creating client applications?</label>
+          <select class="form-control" id="question4" required>
+            <option value="">select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+          <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group">
+          <label for="food">Do you like building interactive web applications?</label>
+          <select class="form-control" id="question5" required>
+            <option value="">select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+          <div class="help-block with-errors"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">match</button>
+      </form>
+    </div>
+  </div>
+  <div class="panel panel-success" id="track">
+    <div class="panel-heading">
+      <h1 class="panel-title ActorName-title">The Track suggested for you is:</h1>
+    </div>
+    <div class="panel-body" id="cc">
+      <p><img src="img/cc.png">The C# ("C sharp") programming language is most commonly used with the .NET framework. Students who are well-versed in C# programming can use it to create client applications, database applications, distributed components, and much more. Students who learn C# programming and combine it with their knowledge of the .NET framework can target larger enterprises, government agencies, and companies serving enterprise and government clients for employment.</p>
+      <ul>
+      <li><p></p>owerful and flexible programming language!</li>
+      <li>!</li>
+      </ul>
+    </div>
+    <div class="panel-body" id="ruby">
+      <p><img src="img/ruby.jpg">Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
+      <ul>
+      <li>Time efficient!</li>
+      <li>Contains many ready-made plugins and modules!</li>
+      </ul>
+    </div>
+
+    <div class="panel-body" id="java">
+      <p><img src="img/java.png">Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</p>
+      <ul>
+      <li>Easy to use!</li>
+      <li>Easy to write, compile, debug!</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
